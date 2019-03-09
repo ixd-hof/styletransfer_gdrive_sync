@@ -29,11 +29,12 @@ $ mkdir Transfered
 
 ## Download script & create cron job
 ```
-$ wget 
-$ chmod 755 
+$ cd /home/you/fast-style-transfer
+$ wget https://raw.githubusercontent.com/ixd-hof/styletransfer_gdrive_sync/master/check_gdrive.sh
+$ chmod 755 check_gdrive.sh
 $ crontab -e
 ... add ... for 10 minute interval
-*/10 * * * * /home/you/check_gdrive.sh
+*/10 * * * * /home/you/fast-style-transfer/check_gdrive.sh
 ... and exit ...
 ```
 
